@@ -1,0 +1,52 @@
+---
+title: コースガイド
+pageTitle: たのしみdev - textbook
+description: Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.
+---
+お好きなコースを選んでください {% .lead %}
+{% quick-links %}
+
+{% quick-link title="Flutter 1" icon="theming" href="/docs/flutter1/1_whatis" description="Flutter 基礎編　iOS、Androidアプリ開発を学びます！開発環境構築、デバッグ方法や、簡単なアプリケーション作成まで" /%}
+
+{% quick-link title="Flutter 2" icon="theming" href="/docs/flutter2/1_whatis" description="アプリ制作で必要な知識を網羅的に" /%}
+
+{% quick-link title="Webシステム開発" icon="installation" href="/docs/websys" description="画面、サーバー処理、データベースなど、システム開発の基礎を学びます" /%}
+
+{% quick-link title="Docker" icon="presets" href="/docs/docker" description="ネットワーク、データベース、Webサーバー等、コンテナ作成、仮想環境を学びます" /%}
+
+{% quick-link title="React Native" icon="theming" href="#" description="Reactを使って、iOS、Android開発を0から学びます" /%}
+
+{% quick-link title="Web基礎" icon="installation" href="/docs/web" description="HTML、CSS、JavaScriptの基礎を学びます" /%}
+
+{% quick-link title="WordPress" icon="installation" href="#" description="WordPressの使い方から、テーマ開発までトータルで学びます" /%}
+
+
+{% quick-link title="React" icon="plugins" href="#" description="Reactの基礎、ReduxToolKit、Next.jsなどを学びます" /%}
+
+{% quick-link title="Vue.js" icon="plugins" href="/docs/vuejs/basic-1" description="Vue.jsの基礎、Vuex、Nuxt.jsなどを学びます" /%}
+
+{% quick-link title="PHP" icon="plugins" href="#" description="PHPの基礎、Laravelを利用したWebシステム開発を学びます" /%}
+
+{% quick-link title="Java" icon="plugins" href="#" description="Javaの基礎、SpringBootを利用したWebシステム開発を学びます" /%}
+
+{% quick-link title="Node.js" icon="plugins" href="#" description="Node.jsの基礎、Express.jsを利用したWebシステム開発を学びます" /%}
+
+{% quick-link title="Angular" icon="plugins" href="#" description="Angularの基礎、NestJSを利用したWebシステム開発を学びます" /%}
+
+{% quick-link title="Python" icon="plugins" href="#" description="Pythonの基礎、Djangoを利用したWebシステム開発を学びます" /%}
+
+{% quick-link title="Ruby" icon="plugins" href="#" description="Rubyの基礎、Ruby On Railsを利用したWebシステム開発を学びます" /%}
+
+{% quick-link title="クラウド" icon="presets" href="#" description="AWS、GoogleCloudの基礎を学習します" /%}
+
+{% quick-link title="コンテナ、CI/CD" icon="presets" href="#" description="Docker、Kubernetes、Github Actionsなどを学びます" /%}
+
+
+
+{% /quick-links %}
+
+{% callout type="warning" title="徐々に内容を更新中です！" %}
+{% /callout %}
+
+
+
