@@ -29,18 +29,18 @@ const navigation = [
   {
     title: 'フロントエンド',
     links: [
-      { title: 'Dart', href: '/docs/writing-plugins' },
-      { title: 'Widget', href: '/docs/neuralink-integration' },
-      { title: 'Layout', href: '/docs/wp/wp-basic-theme1' },
-      { title: 'Navigation', href: '/docs/neuralink-integration' },
+      { title: 'Dart', href: '/docs/writing-plugins2' },
+      { title: 'Widget', href: '/docs/neuralink-integration3' },
+      { title: 'Layout', href: '/docs/wp/wp-basic-theme14' },
+      { title: 'Navigation', href: '/docs/neuralink-integration5' },
     ],
   },
   {
     title: 'バックエンド',
     links: [
-      { title: 'State management', href: '/docs/writing-plugins' },
-      { title: 'Networking', href: '/docs/neuralink-integration' },
-      { title: 'Persistence', href: '/docs/wp/wp-basic-theme1' },
+      { title: 'State management', href: '/docs/writing-plugins6' },
+      { title: 'Networking', href: '/docs/neuralink-integration7' },
+      { title: 'Persistence', href: '/docs/wp/wp-basic-theme18' },
     ],
   },
   {
