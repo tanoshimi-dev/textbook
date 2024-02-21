@@ -14,7 +14,10 @@ import { LayoutFlutter1 } from '@/components/LayoutFlutter1'
 import { LayoutFlutter2 } from '@/components/LayoutFlutter2'
 import { LayoutVuejs } from '@/components/LayoutVuejs'
 import { LayoutDocker } from '@/components/LayoutDocker'
-
+import { LayoutPhp } from '@/components/LayoutPhp'
+import { LayoutTypeScript } from '@/components/LayoutTypeScript'
+import { LayoutNodejs } from '@/components/LayoutNodejs'
+import { LayoutDevops } from '@/components/LayoutDevops'
 
 import 'focus-visible'
 import '@/styles/tailwind.css'
@@ -80,6 +83,10 @@ export default function App({ Component, pageProps }) {
   const LAYOUT_FLUTTER_2 = 'Flutter2';
   const LAYOUT_VUEJS = 'vuejs';
   const LAYOUT_DOCKER = 'docker';
+  const LAYOUT_PHP = 'php';
+  const LAYOUT_NODEJS = 'nodejs';
+  const LAYOUT_TYPESCRIPT = 'typescript';
+  const LAYOUT_DEVOPS = 'devops';
 
   let layoutId = LAYOUT_DEFAULT;
   let currentPath = pageProps.markdoc?.file.path;
@@ -116,7 +123,6 @@ export default function App({ Component, pageProps }) {
     } else if(currentPath.startsWith('\\docs\\pg')){
       layoutId = LAYOUT_PG;
       pageTitle = 'プログラミング';
-  
 
     } else if(currentPath.startsWith('\\docs\\flutter1')){
       layoutId = LAYOUT_FLUTTER_1;
@@ -134,9 +140,26 @@ export default function App({ Component, pageProps }) {
       layoutId = LAYOUT_DOCKER;
       pageTitle = 'Docker';
 
+    } else if(currentPath.startsWith('\\docs\\php')){
+      layoutId = LAYOUT_PHP;
+      pageTitle = 'PHP';
+
+    } else if(currentPath.startsWith('\\docs\\nodejs')){
+      layoutId = LAYOUT_NODEJS;
+      pageTitle = 'Node.js';
+
+    } else if(currentPath.startsWith('\\docs\\typescript')){
+      layoutId = LAYOUT_TYPESCRIPT;
+      pageTitle = 'TypeScript';
+
+    } else if(currentPath.startsWith('\\docs\\devops')){
+      layoutId = LAYOUT_DEVOPS;
+      pageTitle = 'Devops';
+
     } 
 
-    console.log(layoutId);
+    
+    // console.log(layoutId);
       
   }
 
@@ -230,6 +253,30 @@ export default function App({ Component, pageProps }) {
          (<LayoutDocker title={title} tableOfContents={tableOfContents}>
             <Component {...pageProps} />
           </LayoutDocker>)
+      }
+
+      { (layoutId === LAYOUT_PHP) &&
+         (<LayoutPhp title={title} tableOfContents={tableOfContents}>
+            <Component {...pageProps} />
+          </LayoutPhp>)
+      }
+
+      { (layoutId === LAYOUT_NODEJS) &&
+         (<LayoutNodejs title={title} tableOfContents={tableOfContents}>
+            <Component {...pageProps} />
+          </LayoutNodejs>)
+      }
+
+      { (layoutId === LAYOUT_TYPESCRIPT) &&
+         (<LayoutTypeScript title={title} tableOfContents={tableOfContents}>
+            <Component {...pageProps} />
+          </LayoutTypeScript>)
+      }
+
+      { (layoutId === LAYOUT_DEVOPS) &&
+         (<LayoutDevops title={title} tableOfContents={tableOfContents}>
+            <Component {...pageProps} />
+          </LayoutDevops>)
       }
 
     </>

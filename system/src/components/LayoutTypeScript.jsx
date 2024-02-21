@@ -28,15 +28,15 @@ const navigation = [
     ],
   },
   {
-    title: 'Dart',
+    title: 'PHP',
     links: [
-      { title: 'Dartとは', href: '/docs/flutter1/05_dart_overview' },
-      { title: 'Dart 基礎', href: '/docs/flutter1/03_install_for_mac2' },
-      { title: 'Dart 応用', href: '/docs/flutter1/03_install_for_mac4' },
+      { title: 'PHPとは', href: '/docs/flutter1/05_dart_overview' },
+      { title: 'PHP基礎', href: '/docs/flutter1/03_install_for_mac2' },
+      { title: 'PHP応用', href: '/docs/flutter1/03_install_for_mac4' },
     ],
   },  
   {
-    title: 'フロントエンド',
+    title: '簡易アプリ',
     links: [
       { title: 'Widget', href: '/docs/neuralink-integration3' },
       { title: 'Layout', href: '/docs/wp/wp-basic-theme14' },
@@ -44,19 +44,17 @@ const navigation = [
     ],
   },
   {
-    title: 'バックエンド',
+    title: 'フレームワーク(Laravel)',
     links: [
-      { title: 'State management', href: '/docs/writing-plugins6' },
+      { title: 'Laravel', href: '/docs/writing-plugins6' },
       { title: 'Networking', href: '/docs/neuralink-integration7' },
       { title: 'Persistence', href: '/docs/wp/wp-basic-theme18' },
     ],
   },
   {
-    title: 'パッケージ & プラグイン',
+    title: 'Laravel 機能',
     links: [
-      { title: 'WebView', href: '/docs/writing-plugins' },
-      { title: 'Networking', href: '/docs/neuralink-integration' },
-      { title: 'Persistence', href: '/docs/wp/wp-basic-theme1' },
+      { title: 'Sanctum', href: '/docs/writing-plugins' },
     ],
   },
   {
@@ -180,7 +178,7 @@ function useTableOfContents(tableOfContents) {
   return currentSection
 }
 
-export function LayoutFlutter1({ children, title, tableOfContents }) {
+export function LayoutTypeScript({ children, title, tableOfContents }) {
   let router = useRouter()
   let isHomePage = router.pathname === '/'
   let allLinks = navigation.flatMap((section) => section.links)
@@ -221,7 +219,7 @@ export function LayoutFlutter1({ children, title, tableOfContents }) {
           <div className="sticky top-[4.5rem] -ml-0.5 h-[calc(100vh-4.5rem)] overflow-y-auto overflow-x-hidden py-8 pl-0.5" >
             
             <div className="underline decoration-double mb-4 font-medium text-slate-500 decoration-slate-500">
-              <a href="../">Flutterコース📲</a>
+              <a href="../">PHPコース</a>
             </div>
 
             <Navigation
