@@ -98,7 +98,7 @@ function Header({ navigation }) {
           : 'dark:bg-transparent'
       )}
     >
-      <div className="mr-6 flex lg:hidden">
+      <div className="flex lg:hidden">
         <MobileNavigation navigation={navigation} />
       </div>
 
@@ -106,20 +106,29 @@ function Header({ navigation }) {
         <Link href="/" aria-label="Home page">
           {/* <Logomark className="h-9 w-9 lg:hidden" />
           <Logo className="hidden h-9 w-auto fill-slate-700 dark:fill-sky-100 lg:block" /> */}
-
+          {/* 
           <div className="grid-element">
-            {/* <img src="/textbook/Original on Transparent.png" width="48px" height="48px"
-            /> */}
+            <img src="/textbook/Original on Transparent.png" width="48px" height="48px"
+            /> 
+          </div>
+          */}
 
+          {/* <div className="lg:hidden grid-element">
+            <img src="/hannari.dev_logo_small.png" width="48px" height="48px"/>
+          </div>
+ */}
+          <div className="grid-element">
+            <img src="/hannari.dev_logo.png" width="136px" height="48px"/>
           </div>
 
+{/* 
           <div className="hidden sm:hidden md:block " style={{ position: 'relative', width: '136px', height: '48px' }}>
             <Image
               src="/hannari.dev_logo.png"
               fill
               alt="logo"
             />
-          </div>
+          </div> */}
 
 
         </Link>
