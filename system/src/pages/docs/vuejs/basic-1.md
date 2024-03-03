@@ -17,7 +17,7 @@ Vue.jsの基礎を理解したら、一般的なWebサービスの画面をVue.j
 ## 1　画面の分析
 
 題材画面
-![1_openwork_600.png](/textbook/1_openwork_600.png "1_openwork_600")
+![1_openwork_600.png](/1_openwork_600.png "1_openwork_600")
 
 題材の画面を分析して、コンポーネントを分割します。
 
@@ -35,7 +35,7 @@ Vue.jsの基礎を理解したら、一般的なWebサービスの画面をVue.j
 ここではFigmaで以下の様にモック画面を下書きしました。
 
 モック画面
-![1_mock_2.png](/textbook/1_mock_2.png "1_mock_2")
+![1_mock_2.png](/1_mock_2.png "1_mock_2")
 
 ### 2.2　ファイル構成
 次に、Vueコンポーネントファイルの構成を整理します。

@@ -37,13 +37,26 @@ const themeScript = `
 
   isDarkMode.addEventListener('change', () => updateThemeWithoutTransitions())
 `
+const g4Analytics = `
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-30L5JZGY90"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-30L5JZGY90');
+</script>
+`
 
 export default function Document() {
   return (
     <Html className="antialiased [font-feature-settings:'ss01']" lang="en">
       <Head>
-      <link rel="shortcut icon" href="/textbook/favicon.ico" />
+      {/* <link rel="shortcut icon" href="/textbook/favicon.ico" /> */}
+      <link rel="shortcut icon" href="/favicon.ico" />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <script dangerouslySetInnerHTML={{ __html: g4Analytics }} />
       </Head>
       <body className="bg-white dark:bg-slate-900">
         <Main />

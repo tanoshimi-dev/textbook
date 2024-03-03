@@ -85,9 +85,9 @@ export function MobileNavigation({ navigation }) {
             <Link href="/" className="ml-6" aria-label="Home page">
               {/* <Logomark className="h-9 w-9" /> */}
 
-              <div style={{ position: 'relative', width: '48px', height: '48px' }}>
+            <div className="hidden sm:hidden md:block " style={{ position: 'relative', width: '136px', height: '48px' }}>
               <Image
-                src="/textbook/Original on Transparent.png"
+                src="/hannari.dev_logo.png"
                 fill
                 alt="logo"
               />

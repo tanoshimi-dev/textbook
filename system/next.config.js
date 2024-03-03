@@ -10,7 +10,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/textbook', 
+  // VPSの場合は、こちらを使う
+  //basePath: '/textbook', 
   trailingSlash: true,
 
   /**

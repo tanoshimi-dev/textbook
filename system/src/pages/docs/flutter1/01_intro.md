@@ -8,5 +8,5 @@ Flutterでスマホアプリを開発するための基礎知識を整理しま�
 
 Flutterって何？どうなっているの？って興味がある方、ぜひご覧ください！
 
-![Webシステム](/textbook/flutter/flutter_dash_trimmed.png "")
+![Webシステム](/flutter/flutter_dash_trimmed.png "")
 

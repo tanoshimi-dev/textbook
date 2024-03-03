@@ -122,9 +122,17 @@ function Header({ navigation }) {
 
           </div>
 
-          <div className="hidden sm:hidden md:block " style={{ position: 'relative', width: '48px', height: '48px' }}>
+          {/* <div className="hidden sm:hidden md:block " style={{ position: 'relative', width: '48px', height: '48px' }}>
             <Image
-              src="/textbook/Original on Transparent.png"
+              src="/Original on Transparent.png"
+              fill
+              alt="logo"
+            />
+          </div>
+           */}
+          <div className="hidden sm:hidden md:block " style={{ position: 'relative', width: '136px', height: '48px' }}>
+            <Image
+              src="/hannari.dev_logo.png"
               fill
               alt="logo"
             />
@@ -137,7 +145,7 @@ function Header({ navigation }) {
         {/* <Search /> */}
       </div>
       <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
-        <ThemeSelector className="relative z-10" />
+        {/* <ThemeSelector className="relative z-10" /> */}
         {/* <Link href="https://github.com" className="group" aria-label="GitHub">
           <GitHubIcon className="h-6 w-6 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300" />
         </Link> */}
@@ -231,7 +239,8 @@ export function Layout({ children, title, tableOfContents }) {
             {(title || section) && (
               <header className="mb-9 space-y-1">
                 {section && (
-                  <p className="font-display text-sm font-medium text-sky-500">
+                  // <p className="font-display text-sm font-medium text-sky-500">
+                  <p className="font-display text-sm font-medium text-orange-400">
                     {section.title}
                   </p>
                 )}
